@@ -1,11 +1,11 @@
 #include <iostream>
-
 using namespace std;
 
 int y, z, wybor;
 
 int main()
 {
+	//glowna pentla nie stabilna pomożecie
 	while(wybor!=5)
 	{
 	cout<<"         ";
