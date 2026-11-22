@@ -11,7 +11,7 @@ double* liczba1 = &y;
 double* liczba2 = &z;
 
     system("clear");
-	while(wybor!=5)
+	while(true)
 		{
 		cout<<"                  "<<endl;
 		cout<<"__________________"<<endl;
@@ -24,6 +24,12 @@ double* liczba2 = &z;
 		cout<<"| 5. koniec      |"<<endl;
 		cout<<"------------------"<<endl;
 		cin>>wybor;
+
+        if(wybor==5)
+        {
+        	break;
+        }
+		
 		cout<<"Podaj pierwsza liczba."<<endl;
 		cin>> *liczba1;
 		cout<<"Podaj druga liczba."<<endl;
