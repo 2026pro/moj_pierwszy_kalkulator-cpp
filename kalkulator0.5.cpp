@@ -6,9 +6,10 @@ using namespace std;
 
 int main()
 {
-double y, z, wybor;
+double y, z;
 double* liczba1 = &y;
 double* liczba2 = &z;
+char wybor;
 
     system("clear");
 	while(true)
@@ -25,7 +26,7 @@ double* liczba2 = &z;
 		cout<<"------------------"<<endl;
 		cin>>wybor;
 
-        if(wybor==5)
+        if(wybor=='5')
         {
         	break;
         }
@@ -35,23 +36,30 @@ double* liczba2 = &z;
 		cout<<"Podaj druga liczba."<<endl;
 		cin>> *liczba2;
 	
-		if(wybor==1)
+		if(wybor=='1')
 		{
 			cout<<"Wynik to "<<y+z;
 			
 		}
-		if(wybor==2)
+		if(wybor=='2')
 		{
 			cout<<"Wynik to "<<y-z;
 		
 		}
-		if(wybor==3)
+		if(wybor=='3')
 		{
 			cout<<"Wynik to "<<y*z;
 		}
-		if(wybor==4)
+		if(wybor=='4')
 		{
+		    if(z==0)
+		    {
+		    	cout<<"Nie dziel przez 0!";
+		    }
+		    else
+		    {
 			cout<<"Wynik to "<<y/z;
+			}
 		}
 		}
 		return 0;
