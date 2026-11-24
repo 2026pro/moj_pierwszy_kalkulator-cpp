@@ -52,7 +52,7 @@ char wybor;
 		}
 		if(wybor=='4')
 		{
-		    if(z==0)
+		    if(*liczba2==0)
 		    {
 		    	cout<<"Nie dziel przez 0!";
 		    }
