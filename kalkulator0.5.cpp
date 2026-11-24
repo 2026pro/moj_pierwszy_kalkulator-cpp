@@ -38,17 +38,17 @@ char wybor;
 	
 		if(wybor=='1')
 		{
-			cout<<"Wynik to "<<y+z;
+			cout<<"Wynik to "<<*liczba1 + *liczba2;
 			
 		}
 		if(wybor=='2')
 		{
-			cout<<"Wynik to "<<y-z;
+			cout<<"Wynik to "<<*liczba1 - *liczba2;
 		
 		}
 		if(wybor=='3')
 		{
-			cout<<"Wynik to "<<y*z;
+			cout<<"Wynik to "<<*liczba1 * *liczba2;
 		}
 		if(wybor=='4')
 		{
@@ -58,7 +58,7 @@ char wybor;
 		    }
 		    else
 		    {
-			cout<<"Wynik to "<<y/z;
+			cout<<"Wynik to "<<*liczba1 / *liczba2;
 			}
 		}
 		}
